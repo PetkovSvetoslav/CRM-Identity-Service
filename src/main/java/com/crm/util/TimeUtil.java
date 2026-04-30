@@ -1,4 +1,14 @@
 package com.crm.util;
 
-public class TimeUtil {
+import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
+
+public final class TimeUtil {
+
+    private TimeUtil() {
+    }
+
+    public static String nowIso() {
+        return OffsetDateTime.now().format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+    }
 }

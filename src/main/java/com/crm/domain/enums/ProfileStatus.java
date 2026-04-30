@@ -1,4 +1,6 @@
 package com.crm.domain.enums;
 
-public class ProfileStatus {
+public enum ProfileStatus {
+    ACTIVE,
+    INACTIVE
 }
